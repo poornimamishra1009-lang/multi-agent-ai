@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --background-color: #222;
+  --text-color: #fff;
+  --font-family: Arial, sans-serif;
+  --font-size: 16px;
+  --button-padding: 10px;
+  --button-border-radius: 5px;
+  --button-background-color: #444;
+  --button-text-color: #fff;
+  --display-font-size: 24px;
+  --display-text-alignment: right;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+}
+
+button {
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+button:active {
+  background-color: var(--secondary-color);
+}
+
+.display-screen {
+  font-size: var(--display-font-size);
+  text-align: var(--display-text-alignment);
+  padding: 10px;
+}
+
+.display-screen:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  button {
+    padding: 5px;
+  }
+  .display-screen {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  button {
+    padding: 10px;
+  }
+  .display-screen {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  button {
+    padding: 15px;
+  }
+  .display-screen {
+    font-size: 24px;
+  }
+}
