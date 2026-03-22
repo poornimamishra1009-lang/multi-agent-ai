@@ -1,0 +1,5 @@
+.env
+ag_venv/
+__pycache__/
+my_ai_app/
+calculator-project/
